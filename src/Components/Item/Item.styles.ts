@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   height: 100%;
   button {
     border-radius: 0 0 20px 20px;
+    color: red;
   }
   img {
     max-height: 250px;
