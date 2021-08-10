@@ -34,7 +34,17 @@ const { data, isLoading, error } = useQuery<CartItemType[]>(
  const getTotalItems = (items:CartItemType[] ) => 
  items.reduce((ack:number, item) => ack + item.amount, 0) 
 
-  const handleAddToCart = (clickedItem: CartItemType) => null; 
+  const handleAddToCart = (clickedItem: CartItemType) => {
+setCartItems( prevItem => {
+  const isItemInCart =  prevItem.find(item => item.id === clickedItem.id); 
+  if(isItemInCart) {
+    return prevItem.map(item =>
+    item.id === clickedItem.id ? {...item, amount: item.amount + 1} : item
+    ); 
+  }
+  return [ ...prevItem, { ...clickedItem, amount:1 }]
+}) 
+  };  
   const handleRemoveFromCart = () => null; 
 
   if (isLoading) return <CircularProgress/>;
