@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     border-radius: 20px 20px 0 0;
   }
   div {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
     padding: 1rem;
     height: 100%;
   }
