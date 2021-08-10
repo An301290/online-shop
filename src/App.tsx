@@ -7,6 +7,7 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Badge from '@material-ui/core/Badge';
 import { Wrapper, StyledButton  } from './App.styles';
 import Item from "./Components/Item/Item"; 
+import Cart from "./Components/Cart/Cart"; 
 
 export type CartItemType = {
   id: number;
@@ -32,7 +33,7 @@ const { data, isLoading, error } = useQuery<CartItemType[]>(
 
  const getTotalItems = (items:CartItemType[] ) => 
  items.reduce((ack:number, item) => ack + item.amount, 0) 
- 
+
   const handleAddToCart = (clickedItem: CartItemType) => null; 
   const handleRemoveFromCart = () => null; 
 
@@ -42,7 +43,11 @@ const { data, isLoading, error } = useQuery<CartItemType[]>(
   return ( 
   <Wrapper>
     <Drawer anchor="right" open={isCartOpen} onClose={()=> setIsCartOpen(false)}>
-      Cart goes here
+     <Cart 
+     cartItems={cartItems}
+    addToCart={handleAddToCart}
+    removeFromCart={handleRemoveFromCart}
+    />
     </Drawer>
 <StyledButton onClick={() => setIsCartOpen(true)}>
   <Badge badgeContent={getTotalItems(cartItems)} color="error">
