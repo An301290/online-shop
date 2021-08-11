@@ -1,25 +1,22 @@
+<h1>AllYouNeed Online-Shop</h1>
 
-<h1><project-name></h1>
-
-<p><project-description></p>
+<p>AllYouNeed is a page that allows you to select products and add them in to your shopping cart</p>
 
 ## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
+- [Repo](https://github.com/An301290/online-shop)
 
-- [Live](<Homepage url> "Live View")
+- [Live](https://an301290.github.io/online-shop/)
 
-- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
-
-- [API](<API Link> "API")
+- [API](https://fakestoreapi.com/)
 
 ## Screenshots
 
-![Home Page](/screenshots/1.png "Home Page")
+![Home Page]("./src/Images/main-page.png")
 
-![](/screenshots/2.png)
+![Item]("./src/Images/Item.png")
 
-![](/screenshots/3.png)
+![Cart]("./src/Images/cart.png")
 
 ## Available Commands
 
@@ -51,23 +48,15 @@ For running the server file on you can use this command.
 ## Built With
 
 - JavaScript
-- Node
-- NPM
-- Webpack
-- HTML
-- CSS
-
-## Future Updates
-
-- [ ] Reliable Storage
+- React
+- Material Ui
+- Typescript
+- React-Query
+- Styled Components
 
 ## Author
 
-**Rohit Jain**
-
-- [Profile](https://github.com/rohit19060 "Rohit jain")
-- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
-- [Website](https://kingtechnologies.in "Welcome")
+**Angel Samano Hamud**
 
 ## 🤝 Support
 
