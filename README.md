@@ -9,15 +9,6 @@
 - [Live](https://an301290.github.io/online-shop/)
 
 - [API](https://fakestoreapi.com/)
-
-## Screenshots
-
-![Home Page]("./src/Images/main-page.png")
-
-![Item]("./src/Images/Item.png")
-
-![Cart]("./src/Images/cart.png")
-
 ## Available Commands
 
 In the project directory, you can run:
