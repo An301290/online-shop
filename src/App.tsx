@@ -8,6 +8,7 @@ import Badge from "@material-ui/core/Badge";
 import { Wrapper, StyledButton } from "./App.styles";
 import Item from "./Components/Item/Item";
 import Cart from "./Components/Cart/Cart";
+import NavBar from "./Components/NavBar/NavBar"
 
 export type CartItemType = {
   id: number;
@@ -65,7 +66,10 @@ function App() {
   if (error) return <div>Somethin went wrong while loading</div>;
 
   return (
+    <>
+    <NavBar/>
     <Wrapper>
+      <h2 className="description">Find the products you want</h2>
       <Drawer
         anchor="right"
         open={isCartOpen}
@@ -90,6 +94,7 @@ function App() {
         ))}
       </Grid>
     </Wrapper>
+</>
   );
 }
 
